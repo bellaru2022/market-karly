@@ -8,6 +8,7 @@ import {
   isString,
   bindEvent,
 } from "../../lib/index.js";
+import { handlerSignUp } from "../sign/index.js";
 
 const checkAgreeAll = getNode("input[name=agreeAll]");
 
@@ -82,6 +83,8 @@ let idCheckButton = getNode(".id-check");
 
 // * Event Listener --------------------------------------------------------
 form.addEventListener("input", (e) => {
+  e.preventDefault();
+
   if (e.target.classList.contains("user-id")) {
     if (!isValidId(e.target.value)) {
       errorText.textContent =
@@ -160,3 +163,7 @@ function findAddr() {
 }
 
 bindEvent(addressButton, "click", findAddr);
+
+// 가입하기 버튼
+const signUp = getNode(".sign-button");
+signUp.addEventListener("click", handlerSignUp);

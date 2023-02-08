@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(./reset.css);
 @import url(./nomalize.css);
 @import url(./base.css);
@@ -7,14 +8,21 @@
   list-style: none;
 }
 
+=======
+>>>>>>> upstream/develop
 /* 공통 */
 .common {
   width: 1050px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .container {
   width: 1050px;
+=======
+.product-box {
+  width: 1450px;
+>>>>>>> upstream/develop
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -31,12 +39,15 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .main {
   width: 783px;
   min-width: auto;
   /* width삭제하면 안됨 */
 }
 
+=======
+>>>>>>> upstream/develop
 /* 아코디언 메뉴부분 */
 
 .accordion {
